@@ -56,7 +56,7 @@ def specific_author_genre():
 def book_checkout():
     user_book_id = input("Enter book ID: ")
     book_num = int(user_book_id[1]) - 1
-    checkouts = library_books[book_num]["available"]
+    checkouts = library_books[book_num]["checkouts"]
     availability = library_books[book_num]["available"]
     if availability == True:
         availability = False
