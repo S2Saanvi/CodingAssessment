@@ -97,9 +97,9 @@ def overdue_books():
 class Book:
     def __init__(self, available_books, specific_author_genre, book_checkout, book_return):
         self.available_books = available_books()
-        self.specific_author_genre()
-        self.book_checkout
-        self.book_return
+        self.specific_author_genre() = specific_author_genre()
+        self.book_checkout = book_checkout()
+        self.book_return = book_return()
         
     def available_books():
         i = 0
